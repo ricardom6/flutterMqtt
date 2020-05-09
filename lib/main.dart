@@ -30,15 +30,15 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  String broker = 'iot.plug.farm';
-  int port = 1883;
-  String clientIdentifier = 'android';
-  String topic = 'professor_temp'; // TROQUE AQUI PARA UM TOPIC EXCLUSIVO SEU
+  String broker = 'mykenas.ddns.net';
+  int port = 1884;
+  String clientIdentifier = 'RicardoAndroid';
+  String topic = 'postemp'; // TROQUE AQUI PARA UM TOPIC EXCLUSIVO SEU
 
   mqtt.MqttClient client;
   mqtt.MqttConnectionState connectionState;
 
-  double _temp = 20;
+  double _temp = 24;
 
   StreamSubscription subscription;
 
